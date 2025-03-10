@@ -471,7 +471,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Include="Core.cs" />
+		<Compile Include="ConsoleUnlocker.cs" />
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">

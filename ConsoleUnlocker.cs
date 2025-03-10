@@ -10,7 +10,7 @@ using ScheduleOne.DevUtilities;
 using ScheduleOne.ItemFramework;
 using ScheduleOne.Tools;
 
-[assembly: MelonInfo(typeof(Schedule1ConsoleUnlocker.Core), "Schedule1ConsoleUnlocker", "1.0.0", "iCallH4x", null)]
+[assembly: MelonInfo(typeof(Schedule1ConsoleUnlocker.Core), "Schedule1ConsoleUnlocker", "1.0.1", "iCallH4x", null)]
 [assembly: MelonGame("TVGS", "Schedule I Free Sample")]
 
 namespace Schedule1ConsoleUnlocker
@@ -21,6 +21,7 @@ namespace Schedule1ConsoleUnlocker
 
         public override void OnInitializeMelon()
         {
+            DebugHack.ApplyPatch();
             MelonLogger.Msg("Schedule1ConsoleUnlocker loaded.");
 
             _harmony = new HarmonyLib.Harmony("com.console.unlocker");
@@ -150,6 +151,26 @@ namespace Schedule1ConsoleUnlocker
             {
                 EnableConsole();
             }
+        }
+
+        [HarmonyPatch(typeof(Debug), "isDebugBuild", MethodType.Getter)]
+        public static class DebugPatch
+        {
+            public static bool Prefix(ref bool __result)
+            {
+                __result = true;
+                return false;
+            }
+        }
+
+        public class DebugHack
+        {
+            public static void ApplyPatch()
+            {
+                var harmony = new HarmonyLib.Harmony("com.test.debugpatch");
+                harmony.PatchAll();
+            }
+        }
 
         private void EnableConsole()
         {
@@ -157,11 +178,11 @@ namespace Schedule1ConsoleUnlocker
             if (console != null)
             {
                 console.SetIsOpen(true);
-                MelonLogger.Msg("Dev console enabled");
+                MelonLogger.Msg("Dev console enabled.");
             }
             else
             {
-                MelonLogger.Warning("Console GameObject not found");
+                MelonLogger.Warning("Console GameObject not found.");
             }
         }
     }
