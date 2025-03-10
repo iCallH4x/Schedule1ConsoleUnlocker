@@ -21,7 +21,6 @@ namespace Schedule1ConsoleUnlocker
 
         public override void OnInitializeMelon()
         {
-            DebugHack.ApplyPatch();
             MelonLogger.Msg("Schedule1ConsoleUnlocker loaded.");
 
             _harmony = new HarmonyLib.Harmony("com.console.unlocker");
@@ -36,7 +35,7 @@ namespace Schedule1ConsoleUnlocker
             }
             else
             {
-                MelonLogger.Warning("Failed to patch IS_CONSOLE_ENABLED - method not found.");
+                MelonLogger.Warning("Failed to patch IS_CONSOLE_ENABLED - method not found");
             }
             MelonLogger.Msg("Initializing all console commands");
 
@@ -150,25 +149,6 @@ namespace Schedule1ConsoleUnlocker
             if (Input.GetKeyDown(KeyCode.F8)) 
             {
                 EnableConsole();
-            }
-        }
-
-        [HarmonyPatch(typeof(Debug), "isDebugBuild", MethodType.Getter)]
-        public static class DebugPatch
-        {
-            public static bool Prefix(ref bool __result)
-            {
-                __result = true;
-                return false;
-            }
-        }
-
-        public class DebugHack
-        {
-            public static void ApplyPatch()
-            {
-                var harmony = new HarmonyLib.Harmony("com.test.debugpatch");
-                harmony.PatchAll();
             }
         }
 
