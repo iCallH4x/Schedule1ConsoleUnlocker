@@ -1,0 +1,480 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>Schedule1ConsoleUnlocker</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>Schedule1ConsoleUnlocker</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="AeLa.EasyFeedback.Demo">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\AeLa.EasyFeedback.Demo.dll</HintPath>
+		</Reference>
+		<Reference Include="AeLa.EasyFeedback">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\AeLa.EasyFeedback.dll</HintPath>
+		</Reference>
+		<Reference Include="AeLa.EasyFeedback.InputSystemSupport">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\AeLa.EasyFeedback.InputSystemSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="AmplifyImpostors">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\AmplifyImpostors.dll</HintPath>
+		</Reference>
+		<Reference Include="AmplifyImpostors.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\AmplifyImpostors.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp-firstpass">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="AstarPathfindingProject">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\AstarPathfindingProject.dll</HintPath>
+		</Reference>
+		<Reference Include="Autodesk.Fbx">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Autodesk.Fbx.dll</HintPath>
+		</Reference>
+		<Reference Include="Boxophobic.AtmosphericHeightFog.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Boxophobic.AtmosphericHeightFog.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Boxophobic.Utils.Scripts">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Boxophobic.Utils.Scripts.dll</HintPath>
+		</Reference>
+		<Reference Include="Cinemachine">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Cinemachine.dll</HintPath>
+		</Reference>
+		<Reference Include="com.rlabrecque.steamworks.net">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+		</Reference>
+		<Reference Include="CorgiGodRays">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\CorgiGodRays.dll</HintPath>
+		</Reference>
+		<Reference Include="EasyButtons">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\EasyButtons.dll</HintPath>
+		</Reference>
+		<Reference Include="Edgegap">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Edgegap.dll</HintPath>
+		</Reference>
+		<Reference Include="FbxBuildTestAssets">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\FbxBuildTestAssets.dll</HintPath>
+		</Reference>
+		<Reference Include="FishNet.CodeAnalysis">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\FishNet.CodeAnalysis.dll</HintPath>
+		</Reference>
+		<Reference Include="FishNet.Demos">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\FishNet.Demos.dll</HintPath>
+		</Reference>
+		<Reference Include="FishNet.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\FishNet.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="GameKit.Dependencies">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\GameKit.Dependencies.dll</HintPath>
+		</Reference>
+		<Reference Include="GameKit.Utilities">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\GameKit.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Demo.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\HBAO.Demo.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Demo.Universal.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\HBAO.Demo.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\HBAO.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Universal.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\HBAO.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HSVPicker">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\HSVPicker.dll</HintPath>
+		</Reference>
+		<Reference Include="LokoSolo.PinchableScrollRect">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\LokoSolo.PinchableScrollRect.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Pathfinding.ClipperLib">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Pathfinding.ClipperLib.dll</HintPath>
+		</Reference>
+		<Reference Include="Pathfinding.Ionic.Zip.Reduced">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+		</Reference>
+		<Reference Include="Pathfinding.Poly2Tri">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Pathfinding.Poly2Tri.dll</HintPath>
+		</Reference>
+		<Reference Include="RadiantGI">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\RadiantGI.dll</HintPath>
+		</Reference>
+		<Reference Include="RootMotion">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\RootMotion.dll</HintPath>
+		</Reference>
+		<Reference Include="RuntimePreviewGenerator.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\RuntimePreviewGenerator.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="sc.stylizedgrass.runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\sc.stylizedgrass.runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="sc.stylizedwater2.runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\sc.stylizedwater2.runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="StylizedWaterForURP">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\StylizedWaterForURP.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.AI.Navigation">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.AI.Navigation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections.LowLevel.ILSupport">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Formats.Fbx.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Formats.Fbx.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.InputSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem.ForUI">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.InputSystem.ForUI.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem.RebindingUI">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.InputSystem.RebindingUI.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.MemoryProfiler">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.MemoryProfiler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Postprocessing.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProGrids">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.ProGrids.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Runtime">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Shaders">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Analytics">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Analytics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.CloudDiagnostics">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.CloudDiagnostics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Analytics">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Analytics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Configuration">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Device">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Device.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Environments.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments.Internal">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Environments.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Internal">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Networking">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Networking.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Registration">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Registration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Scheduler">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Scheduler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Telemetry">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Telemetry.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Threading">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Services.Core.Threading.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TerrainTools">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.TerrainTools.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.NVIDIAModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.NVIDIAModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VirtualTexturingModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Nature">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\VisualDesignCafe.Nature.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Packages">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\VisualDesignCafe.Packages.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.ShaderX">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\Schedule I Free Sample_Data\Managed\VisualDesignCafe.ShaderX.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\MelonLoader\net35\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>W:\SteamLibrary\steamapps\common\Schedule I Demo\MelonLoader\net35\0Harmony.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="ConsoleUnlocker.cs" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;W:\SteamLibrary\steamapps\common\Schedule I Demo\Mods&quot;" />
+	</Target>
+</Project>
