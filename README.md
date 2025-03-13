@@ -20,7 +20,7 @@ This is a very scrappy MelonLoader mod that enables the dev console (F8) and reg
 | `growplants` | Sets ALL plants in the world fully grown | `growplants` |
 | `hideui` | Hides all on-screen UI. | `hideui` |
 | `lowerwanted` | Lowers the player's wanted level | `lowerwanted` |
-| `packageprodcut` | No description available. | `packageproduct jar, packageproduct baggie` |
+| `packageproduct` | No description available. | `packageproduct jar, packageproduct baggie` |
 | `raisewanted` | Raises the player's wanted level | `raisewanted` |
 | `save` | Forces a save | `save` |
 | `setdiscovered` | Sets the specified product as discovered | `setdiscovered ogkush` |
